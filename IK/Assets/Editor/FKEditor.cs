@@ -12,17 +12,67 @@ namespace Assets.Editor
     class FKEditor : UnityEditor.Editor
     {
         FK fk;
+        bool showBones = true;
         public void OnSceneGUI()
         {
             fk = target as FK;
-            if(fk.StartBone && fk.EndBone)
+            fk.StartBone._showAsActive = true;
+            fk.EndBone._showAsActive = true;
+            foreach (var b in fk.Bones)
             {
-                fk.Bones = SearchBones(fk.EndBone.transform, fk.StartBone).ToArray();
+                b._showAsActive = true;
             }
+            fk = target as FK;
         }
+        private void OnEnable()
+        {
+            
+        }
+        
         public override void OnInspectorGUI()
         {
-            base.OnInspectorGUI();
+            fk = target as FK;
+            var bone = EditorGUILayout.ObjectField("Start Bone", fk.StartBone, typeof(Bone), true) as Bone;
+            if(bone != fk.StartBone)
+            {
+                fk.StartBone = bone;
+                InitBones();
+            }
+            bone = EditorGUILayout.ObjectField("End Bone", fk.EndBone, typeof(Bone), true) as Bone;
+            if(bone !=fk.EndBone)
+            {
+                fk.EndBone = bone;
+                InitBones();
+            }
+            EditorGUILayout.Space();
+            showBones = EditorGUILayout.Foldout(showBones, "Bones");
+            if (showBones)
+            {
+                GUIStyle style = new GUIStyle();
+                style.margin.left = 20;
+                EditorGUILayout.BeginVertical(style);
+                for(var i=0;i<fk.Bones.Length;i++)
+                {
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.ObjectField(fk.Bones[i], typeof(Bone), true);
+                    fk.Rotations[i].eulerAngles = EditorGUILayout.Vector3Field("", fk.Rotations[i].eulerAngles);
+                    EditorGUILayout.EndHorizontal();
+                }
+                EditorGUILayout.EndVertical();
+            }
+        }
+
+        public void InitBones()
+        {
+            if (fk.StartBone && fk.EndBone)
+            {
+                fk.Bones = SearchBones(fk.EndBone.transform, fk.StartBone).ToArray();
+                fk.Rotations = new Quaternion[fk.Bones.Length];
+                for(var i=0;i<fk.Bones.Length;i++)
+                {
+                    fk.Rotations[i] = fk.Bones[i].transform.localRotation;
+                }
+            }
         }
 
         public List<Bone> SearchBones(Transform current,Bone target)
@@ -36,6 +86,13 @@ namespace Assets.Editor
                 next.Add(current.GetComponent<Bone>());
             return next;
 
+        }
+
+        public static FK CreateFK(Bone endbone)
+        {
+            var obj = new GameObject("FK", typeof(FK));
+            obj.GetComponent<FK>().EndBone = endbone;
+            return obj.GetComponent<FK>();
         }
     }
 }
