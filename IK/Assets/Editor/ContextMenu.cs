@@ -25,5 +25,16 @@ namespace Assets.Editor
                 Selection.SetActiveObjectWithContext(fk, fk.gameObject);
             }
         }
+
+        [MenuItem("GameObject/3D Object/IK CCD")]
+        static void CreateIKCCD(MenuCommand cmd)
+        {
+            var bone = (cmd.context as GameObject).GetComponent<Bone>();
+            if (bone)
+            {
+                var ik = IKCCDEditor.CreateIKCCD(bone);
+                Selection.SetActiveObjectWithContext(ik, ik.gameObject);
+            }
+        }
     }
 }

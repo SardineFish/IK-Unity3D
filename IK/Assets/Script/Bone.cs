@@ -12,11 +12,25 @@ public class Bone : MonoBehaviour
     public bool Edit = true;
     public Bone[] SubBones = new Bone[0];
     public bool _showAsActive = false;
+
+    public bool AngularLimit = true;
+    public Range AngularLimitX = new Range(-180, 180);
+    public Range AngularLimitY = new Range(-180, 180);
+    public Range AngularLimitZ = new Range(-180, 180);
+    
     public Vector3 DirectionVector
     {
         get
         {
             return transform.rotation * InitialVector;
+        }
+    }
+
+    public Matrix4x4 BoneToWorldMatrix
+    {
+        get
+        {
+            return transform.localToWorldMatrix * Matrix4x4.Rotate(Quaternion.FromToRotation(Vector3.right, InitialVector));
         }
     }
 
@@ -26,11 +40,14 @@ public class Bone : MonoBehaviour
 
     }
 
+    [ExecuteInEditMode]
     // Update is called once per frame
     void Update()
     {
+
+        ApplyAngularLimit();
         //Debug.DrawLine(transform.position, transform.position + DirectionVector * 10);
-        if(SubBones.Length>0 && Edit)
+        if (SubBones != null && SubBones.Length > 0 && Edit)
         {
             this.InitialVector = Quaternion.Inverse(transform.rotation) * (SubBones[0].transform.position - transform.position);
             this.Length = InitialVector.magnitude;
@@ -41,6 +58,20 @@ public class Bone : MonoBehaviour
     {
         Array.Resize(ref SubBones, SubBones.Length + 1);
         SubBones[SubBones.Length - 1] = bone;
+    }
+
+    public void ApplyAngularLimit()
+    {
+        if (AngularLimit)
+        {
+            var angle = transform.localRotation.eulerAngles;
+            angle.x = AngularLimitX.Limit(MathUtility.MapAngle(angle.x));
+            angle.y = AngularLimitY.Limit(MathUtility.MapAngle(angle.y));
+            angle.z = AngularLimitZ.Limit(MathUtility.MapAngle(angle.z));
+            transform.localRotation = Quaternion.identity;
+            transform.localRotation = Quaternion.Euler(angle);
+
+        }
     }
 
     [ExecuteInEditMode]

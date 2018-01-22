@@ -139,20 +139,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 1.2369996, y: 0.46599972, z: 0.00000031240864}
-  Length: 1.3218638
+  InitialVector: {x: 1.2370006, y: 0.4660003, z: 0.00000033918624}
+  Length: 1.3218648
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 81255052}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &76593800
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76593798}
-  m_LocalRotation: {x: 0.56189936, y: 0.5629523, z: 0.21759035, w: 0.56569266}
+  m_LocalRotation: {x: 0.5619152, y: 0.5629315, z: 0.21759443, w: 0.56569624}
   m_LocalPosition: {x: 1.891, y: 1.348, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -187,20 +197,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 1.3260009, y: -0.67700064, z: -0.00000037415825}
-  Length: 1.4888278
+  InitialVector: {x: 1.3260009, y: -0.6770013, z: 0.0000010102626}
+  Length: 1.4888282
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 1187437048}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &81255053
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81255051}
-  m_LocalRotation: {x: 0.74496657, y: 0.09052695, z: 0.28483343, w: 0.5964056}
+  m_LocalRotation: {x: 0.7449561, y: 0.09055185, z: 0.28482333, w: 0.59641975}
   m_LocalPosition: {x: 1.237, y: 0.466, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -287,20 +307,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 0.52600014, y: 0.53200006, z: 0.00000006275831}
-  Length: 0.74813116
+  InitialVector: {x: 0.52599996, y: 0.532, z: -0.000000020213228}
+  Length: 0.748131
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 990815817}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &212959787
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 212959785}
-  m_LocalRotation: {x: 0.74397707, y: 0.49408904, z: 0.25312105, w: 0.37189224}
+  m_LocalRotation: {x: 0.7439779, y: 0.4940949, z: 0.25311086, w: 0.37188968}
   m_LocalPosition: {x: 4.5591226, y: 0.8652792, z: -3.8561687}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -343,7 +373,7 @@ MonoBehaviour:
   - {fileID: 1255253059}
   Rotations:
   - {x: 0, y: 0, z: 0, w: 1}
-  - {x: -0, y: -0, z: -0.08443053, w: 0.9964294}
+  - {x: 0, y: 0, z: -0.08443049, w: 0.9964294}
   - {x: 0, y: 0, z: 0, w: 1}
 --- !u!4 &245897997
 Transform:
@@ -352,7 +382,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 245897995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.995228, y: 9.998722, z: -0.09399608}
+  m_LocalPosition: {x: 14.995226, y: 9.998722, z: -0.09399608}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -465,6 +495,16 @@ MonoBehaviour:
   SubBones:
   - {fileID: 1327397853}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &309426766
 Transform:
   m_ObjectHideFlags: 0
@@ -489,6 +529,8 @@ GameObject:
   m_Component:
   - component: {fileID: 338780804}
   - component: {fileID: 338780805}
+  - component: {fileID: 338780807}
+  - component: {fileID: 338780806}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Untagged
@@ -502,11 +544,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338780803}
-  m_LocalRotation: {x: 0.8546739, y: 0.08488001, z: 0.4672448, w: -0.20978577}
-  m_LocalPosition: {x: -0.32, y: 0, z: 8.78}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.9, y: 0, z: 7.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439176351}
+  - {fileID: 573563075}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -521,13 +564,132 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 0.99999994, y: 3.13213e-10, z: 0.00000011678862}
-  Length: 0.99999994
+  InitialVector: {x: 0.52000046, y: 0.368, z: 0.41900015}
+  Length: 0.76248646
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 439176350}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
+--- !u!153 &338780806
+ConfigurableJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338780803}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -13.9, y: 0, z: 7.58}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 2
+  m_YMotion: 2
+  m_ZMotion: 2
+  m_AngularXMotion: 2
+  m_AngularYMotion: 2
+  m_AngularZMotion: 2
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_YDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_SlerpDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &338780807
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338780803}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &439176349
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 439176351}
   - component: {fileID: 439176350}
+  - component: {fileID: 439176353}
+  - component: {fileID: 439176352}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Untagged
@@ -561,19 +725,139 @@ MonoBehaviour:
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &439176351
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 439176349}
-  m_LocalRotation: {x: 0.4802087, y: 0.52416515, z: 0.526457, w: 0.46636197}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalRotation: {x: -0.04723467, y: -0.18224244, z: -0.12587802, w: 0.9740181}
+  m_LocalPosition: {x: 0.52, y: 0.368, z: 0.419}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 751817569}
   m_Father: {fileID: 338780804}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -7.9260006, y: -20.269001, z: -13.309001}
+--- !u!153 &439176352
+ConfigurableJoint:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 439176349}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -12.9004135, y: 0.02848073, z: 7.576002}
+  serializedVersion: 2
+  m_SecondaryAxis: {x: 0, y: 1, z: 0}
+  m_XMotion: 2
+  m_YMotion: 2
+  m_ZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
+  m_LinearLimitSpring:
+    spring: 0
+    damper: 0
+  m_LinearLimit:
+    limit: 0
+    bounciness: 0
+    contactDistance: 0
+  m_AngularXLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowAngularXLimit:
+    limit: 87.189026
+    bounciness: 0
+    contactDistance: 0
+  m_HighAngularXLimit:
+    limit: 94.08641
+    bounciness: 0
+    contactDistance: 0
+  m_AngularYZLimitSpring:
+    spring: 0
+    damper: 0
+  m_AngularYLimit:
+    limit: 79.21694
+    bounciness: 0
+    contactDistance: 0
+  m_AngularZLimit:
+    limit: 3
+    bounciness: 0
+    contactDistance: 0
+  m_TargetPosition: {x: 0, y: 0, z: 0}
+  m_TargetVelocity: {x: 0, y: 0, z: 0}
+  m_XDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_YDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
+  m_RotationDriveMode: 0
+  m_AngularXDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_AngularYZDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_SlerpDrive:
+    serializedVersion: 3
+    positionSpring: 0
+    positionDamper: 0
+    maximumForce: 3.4028233e+38
+  m_ProjectionMode: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_ConfiguredInWorldSpace: 0
+  m_SwapBodies: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &439176353
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 439176349}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &463400266
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +971,236 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &573563074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 573563075}
+  - component: {fileID: 573563078}
+  - component: {fileID: 573563077}
+  - component: {fileID: 573563076}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &573563075
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573563074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.499, y: 0, z: 0.003}
+  m_LocalScale: {x: 0.1, y: 1, z: 0.03289329}
+  m_Children: []
+  m_Father: {fileID: 338780804}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &573563076
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573563074}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &573563077
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573563074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &573563078
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573563074}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &751817568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 751817569}
+  - component: {fileID: 751817572}
+  - component: {fileID: 751817571}
+  - component: {fileID: 751817570}
+  m_Layer: 0
+  m_Name: Plane (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751817569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751817568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5050739, y: 0, z: 0.030747348}
+  m_LocalScale: {x: 0.1, y: 1, z: 0.032890007}
+  m_Children: []
+  m_Father: {fileID: 439176351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &751817570
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751817568}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &751817571
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751817568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &751817572
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751817568}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &760390768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 760390769}
+  - component: {fileID: 760390770}
+  m_Layer: 0
+  m_Name: Bone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760390769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760390768}
+  m_LocalRotation: {x: -0.090060495, y: 0.021522867, z: -0.0016531548, w: 0.9957023}
+  m_LocalPosition: {x: -7.7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1338208917}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &760390770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760390768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialVector: {x: 1.0000002, y: -5.6133452e-11, z: 0.000000006715111}
+  Length: 1.0000002
+  Width: 0.1
+  Edit: 1
+  SubBones:
+  - {fileID: 1338208916}
+  _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!1 &790482527
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +1242,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 790482527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.804, y: 0, z: 8.507}
+  m_LocalPosition: {x: 0.25, y: -0.004, z: 7.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -758,7 +1272,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826540756}
-  m_LocalRotation: {x: -0.35669598, y: -0.65840644, z: 0.35369155, w: 0.5605099}
+  m_LocalRotation: {x: 0.10583529, y: -0.61988777, z: -0.026622932, w: 0.77706456}
   m_LocalPosition: {x: 1.363, y: -0.215, z: -0.093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -782,6 +1296,16 @@ MonoBehaviour:
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!144 &826540759
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -792,29 +1316,29 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.3630005, y: -0.2150001, z: -0.09300065}
+  m_ConnectedAnchor: {x: 1.3630004, y: -0.2149998, z: -0.093000054}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -20
+    limit: 43.33687
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 70
+    limit: 177
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 40
+    limit: 69.41606
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 40
+    limit: 82.07509
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 0
@@ -836,7 +1360,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -863,9 +1387,9 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871673270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 920ed0a72992ec148a40fb886fc851a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d65178109bd06348a05bf519734d937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartBone: {fileID: 338780805}
@@ -873,9 +1397,7 @@ MonoBehaviour:
   Bones:
   - {fileID: 338780805}
   - {fileID: 439176350}
-  Step: 0.1
-  Delta: 0.005
-  Iteration: 1000
+  Iteration: 100
 --- !u!4 &871673272
 Transform:
   m_ObjectHideFlags: 0
@@ -883,7 +1405,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871673270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: -0.93, z: 9.24}
+  m_LocalPosition: {x: -11.301, y: 0, z: 7.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -911,7 +1433,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922692630}
-  m_LocalRotation: {x: 0.30936393, y: 0.39480507, z: -0.15439871, w: 0.85122496}
+  m_LocalRotation: {x: 0.30939057, y: 0.3947817, z: -0.15440422, w: 0.8512251}
   m_LocalPosition: {x: 0.47, y: -4.56, z: -1.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -935,6 +1457,16 @@ MonoBehaviour:
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!1 &990815816
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,20 +1494,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 1.8910002, y: 1.348, z: -0.00000029961922}
-  Length: 2.3222804
+  InitialVector: {x: 1.8909994, y: 1.3479998, z: 0.00000019856265}
+  Length: 2.3222797
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 76593799}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &990815818
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990815816}
-  m_LocalRotation: {x: 0.5415083, y: 0.44613874, z: 0.56712615, w: 0.43138948}
+  m_LocalRotation: {x: 0.541501, y: 0.44613618, z: 0.567124, w: 0.43140417}
   m_LocalPosition: {x: 0.526, y: 0.532, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1010,20 +1552,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 0.47000092, y: -4.5599976, z: -1.8500016}
-  Length: 4.943378
+  InitialVector: {x: 0.46999803, y: -4.560002, z: -1.8500004}
+  Length: 4.943381
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 922692632}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &1187437049
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1187437047}
-  m_LocalRotation: {x: -0.0002975891, y: -0.18479137, z: 0.5473667, w: 0.81623626}
+  m_LocalRotation: {x: -0.00029008824, y: -0.18482524, z: 0.54737586, w: 0.8162226}
   m_LocalPosition: {x: 1.326, y: -0.677, z: 0}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
   m_Children:
@@ -1062,10 +1614,18 @@ MonoBehaviour:
   Length: 6.2187066
   Width: 0.1
   Edit: 1
-  SubBones:
-  - {fileID: 0}
-  - {fileID: 0}
+  SubBones: []
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &1255253060
 Transform:
   m_ObjectHideFlags: 0
@@ -1107,20 +1667,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 3.6490371, y: 5.034017, z: -0.11799812}
-  Length: 6.218579
+  InitialVector: {x: 3.6490366, y: 5.0340166, z: -0.11799812}
+  Length: 6.2185783
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 1255253059}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &1327397854
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1327397852}
-  m_LocalRotation: {x: -0, y: -0, z: -0.08443053, w: 0.9964294}
+  m_LocalRotation: {x: 0, y: 0, z: -0.08443049, w: 0.9964294}
   m_LocalPosition: {x: 6.2720428, y: -0.000007390976, z: -0.03799796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1129,6 +1699,62 @@ Transform:
   m_Father: {fileID: 309426766}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.687}
+--- !u!1 &1338208915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1338208917}
+  - component: {fileID: 1338208916}
+  m_Layer: 0
+  m_Name: Bone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1338208916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338208915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialVector: {x: 1, y: 0, z: 0}
+  Length: 1
+  Width: 0.1
+  Edit: 1
+  SubBones: []
+  _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -10
+    high: 10
+  AngularLimitY:
+    low: -10
+    high: 10
+  AngularLimitZ:
+    low: -180
+    high: 0
+--- !u!4 &1338208917
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338208915}
+  m_LocalRotation: {x: 0.086301915, y: 0.0063348114, z: -0.003175537, w: 0.99624383}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 760390769}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399527289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1828,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1399527289}
   m_Mesh: {fileID: 4300004, guid: fff84c5b724c98e43ac920ec896a5a2c, type: 3}
+--- !u!1 &1419460884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1419460886}
+  - component: {fileID: 1419460885}
+  m_Layer: 0
+  m_Name: IK CCD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1419460885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419460884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d65178109bd06348a05bf519734d937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartBone: {fileID: 760390770}
+  EndBone: {fileID: 1338208916}
+  Bones:
+  - {fileID: 760390770}
+  - {fileID: 1338208916}
+  Iteration: 100
+--- !u!4 &1419460886
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419460884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.284, y: -0.028, z: -0.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526931092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1898,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526931092}
-  m_LocalRotation: {x: -0.35467958, y: 0.683662, z: 0.565445, w: -0.29509443}
+  m_LocalRotation: {x: 0.46163324, y: -0.34101415, z: 0.08112391, w: 0.8148761}
   m_LocalPosition: {x: 2.83, y: 0, z: 6.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1245,13 +1917,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.29299995, y: 0.747, z: 0.37600002}
-  Length: 0.88613427
+  InitialVector: {x: -0.29299986, y: 0.747, z: 0.37599993}
+  Length: 0.8861342
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 1651351525}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!54 &1526931095
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1262,7 +1944,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1284,22 +1966,22 @@ CharacterJoint:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: -20
+    limit: -47.60248
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 70
+    limit: 142.3406
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 40
+    limit: 47.28331
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
-    limit: 40
+    limit: 67.306595
     bounciness: 0
     contactDistance: 0
   m_EnableProjection: 0
@@ -1413,20 +2095,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: 1.3630004, y: -0.21499994, z: -0.09300008}
-  Length: 1.3829837
+  InitialVector: {x: 1.3630006, y: -0.21500018, z: -0.09300001}
+  Length: 1.382984
   Width: 0.1
   Edit: 1
   SubBones:
   - {fileID: 826540758}
   _showAsActive: 0
+  AngularLimit: 1
+  AngularLimitX:
+    low: -180
+    high: 180
+  AngularLimitY:
+    low: -180
+    high: 180
+  AngularLimitZ:
+    low: -180
+    high: 180
 --- !u!4 &1651351526
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651351524}
-  m_LocalRotation: {x: 0.1177246, y: -0.025638485, z: -0.20066717, w: -0.9722223}
+  m_LocalRotation: {x: -0.18457188, y: -0.44012076, z: -0.856564, w: 0.19627823}
   m_LocalPosition: {x: -0.293, y: 0.747, z: 0.376}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1444,7 +2136,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.29299995, y: 0.74700004, z: 0.376}
+  m_ConnectedAnchor: {x: -0.29299998, y: 0.7469999, z: 0.37600002}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1462,7 +2154,7 @@ CharacterJoint:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 20.668602
+    limit: 4.2855883
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
@@ -1488,7 +2180,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0

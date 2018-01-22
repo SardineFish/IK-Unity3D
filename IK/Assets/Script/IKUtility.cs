@@ -20,16 +20,4 @@ public static  class IKUtility
         var y2 = FKDistance(bones, rotations, target);
         return (y2 - y1)/delta;
     }
-
-    public static Quaternion QuaternionBetweenVector(Vector3 u,Vector3 v)
-    {
-        u = u.normalized;
-        v = v.normalized;
-        var cosOfAng = Vector3.Dot(u, v);
-        var halfCos = Mathf.Sqrt(0.5f * (1.0f + cosOfAng));
-        var halfSin = Mathf.Sqrt(0.5f * (1.0f - cosOfAng));
-        var axis = Vector3.Cross(u, v);
-        var quaternion = new Quaternion(halfSin * axis.x, halfSin * axis.y, halfSin * axis.z, halfCos);
-        return quaternion;
-    }
 }

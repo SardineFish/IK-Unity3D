@@ -6,5 +6,9 @@ using UnityEngine;
 
 public class IKLimb : IKCCD
 {
-
+    public void Update()
+    {
+        SoftJointLimit j;
+        
+    }
 }

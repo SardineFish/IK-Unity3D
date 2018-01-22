@@ -55,5 +55,14 @@ namespace Assets.Editor
             }
             Repaint();*/
         }
+
+        public static IKCCD CreateIKCCD(Bone endbone)
+        {
+            var obj = new GameObject("IK CCD",typeof(IKCCD));
+            var ik = obj.GetComponent<IKCCD>();
+            ik.EndBone = endbone;
+            ik.transform.position = endbone.transform.position + endbone.DirectionVector;
+            return ik;
+        }
     }
 }
