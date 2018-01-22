@@ -73,7 +73,7 @@ namespace Assets.Editor
                {
                    EditorGUILayout.ObjectField(bone.SubBones[i], typeof(Bone), true);
                });
-
+            SceneView.RepaintAll();
         }
     }
 }

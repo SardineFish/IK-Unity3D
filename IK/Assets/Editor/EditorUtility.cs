@@ -11,13 +11,14 @@ namespace Assets.Editor
     {
         public static Range DrawRangeField(string lable, Range value)
         {
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField(lable);
-            value.low = EditorGUILayout.FloatField(value.low);
-            EditorGUILayout.LabelField("~", GUILayout.Width(15));
-            value.high = EditorGUILayout.FloatField(value.high);
+            var rect = EditorGUILayout.BeginHorizontal(GUILayout.Height(22));
+            rect.height = 20;
+            EditorGUILayout.Space();
+            var values = new float[] { value.low, value.high };
+            EditorGUI.MultiFloatField(rect,new GUIContent(lable), new GUIContent[] { new GUIContent(" "), new GUIContent("~") }, values);
             EditorGUILayout.EndHorizontal();
-            return value;
+
+            return new Range(values[0], values[1]);
         }
 
         public static bool DrawFoldList(string lable, bool show, Func<bool> itemRenderingCallback)
