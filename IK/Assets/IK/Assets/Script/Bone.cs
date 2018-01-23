@@ -14,9 +14,9 @@ public class Bone : MonoBehaviour
     public bool _showAsActive = false;
 
     public bool AngularLimit = true;
-    public Range AngularLimitX = new Range(-180, 180);
-    public Range AngularLimitY = new Range(-180, 180);
-    public Range AngularLimitZ = new Range(-180, 180);
+    public AngularRange AngularLimitX = new AngularRange(-180, 180);
+    public AngularRange AngularLimitY = new AngularRange(-180, 180);
+    public AngularRange AngularLimitZ = new AngularRange(-180, 180);
     
     public Vector3 DirectionVector
     {
@@ -67,7 +67,7 @@ public class Bone : MonoBehaviour
             var angle = transform.localRotation.eulerAngles;
             angle.x = AngularLimitX.Limit(MathUtility.MapAngle(angle.x));
             angle.y = AngularLimitY.Limit(MathUtility.MapAngle(angle.y));
-            angle.z = AngularLimitZ.Limit(MathUtility.MapAngle(angle.z));
+            angle.z = AngularLimitZ.Limit(angle.z);
             transform.localRotation = Quaternion.Euler(angle);
 
         }

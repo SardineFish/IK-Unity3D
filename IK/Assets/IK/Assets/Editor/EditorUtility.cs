@@ -9,7 +9,7 @@ namespace Assets.Editor
 {
     public static class EditorUtility
     {
-        public static Range DrawRangeField(string lable, Range value)
+        public static AngularRange DrawAngularRangeField(string lable, AngularRange value)
         {
             var rect = EditorGUILayout.BeginHorizontal(GUILayout.Height(22));
             rect.height = 20;
@@ -18,7 +18,7 @@ namespace Assets.Editor
             EditorGUI.MultiFloatField(rect,new GUIContent(lable), new GUIContent[] { new GUIContent(" "), new GUIContent("~") }, values);
             EditorGUILayout.EndHorizontal();
 
-            return new Range(values[0], values[1]);
+            return new AngularRange(values[0], values[1]);
         }
 
         public static bool DrawFoldList(string lable, bool show, Func<bool> itemRenderingCallback)

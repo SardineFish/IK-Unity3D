@@ -23,10 +23,12 @@ public struct Range
 
     public float Limit(float n)
     {
-        if (n > high)
+        if(n<low && n > high)
+        {
+            if (Mathf.Abs(n - low) < Mathf.Abs(n - high))
+                return low;
             return high;
-        else if (n < low)
-            return low;
+        }
         return n;
     }
 

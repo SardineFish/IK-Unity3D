@@ -74,9 +74,9 @@ namespace Assets.Editor
                 bone.InitialVector *= bone.Length / bone.InitialVector.magnitude;
             bone.Width = EditorGUILayout.FloatField("Width", bone.Width);
             bone.AngularLimit = EditorGUILayout.Toggle("Angular Limit", bone.AngularLimit);
-            bone.AngularLimitX = EditorUtility.DrawRangeField("Angular Limit x", bone.AngularLimitX);
-            bone.AngularLimitY = EditorUtility.DrawRangeField("Angular Limit y", bone.AngularLimitY);
-            bone.AngularLimitZ = EditorUtility.DrawRangeField("Angular Limit z", bone.AngularLimitZ);
+            bone.AngularLimitX = EditorUtility.DrawAngularRangeField("Angular Limit x", bone.AngularLimitX);
+            bone.AngularLimitY = EditorUtility.DrawAngularRangeField("Angular Limit y", bone.AngularLimitY);
+            bone.AngularLimitZ = EditorUtility.DrawAngularRangeField("Angular Limit z", bone.AngularLimitZ);
             EditorGUILayout.Space();
             bone . InitialVector = EditorGUILayout.Vector3Field("Initial Vector", bone.InitialVector);
             EditorGUILayout.Space();
