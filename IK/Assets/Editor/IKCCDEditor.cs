@@ -13,12 +13,33 @@ namespace Assets.Editor
     public class IKCCDEditor:IKEditor
     {
         IEnumerator<object[]> iterator;
+        bool showBones = true;
         public override void OnInspectorGUI()
         {
             var ik = target as IKCCD;
             ik.Iteration = EditorGUILayout.IntField("Iteration", ik.Iteration);
             EditorGUILayout.Space();
-            base.OnInspectorGUI();
+
+            var bone = EditorGUILayout.ObjectField("Start Bone", ik.StartBone, typeof(Bone), true) as Bone;
+            if (bone != ik.StartBone)
+            {
+                ik.StartBone = bone;
+                InitBones();
+            }
+            bone = EditorGUILayout.ObjectField("End Bone", ik.EndBone, typeof(Bone), true) as Bone;
+            if (bone != ik.EndBone)
+            {
+                ik.EndBone = bone;
+                InitBones();
+            }
+            EditorGUILayout.Space();
+            showBones = EditorUtility.DrawFoldList("Bones", showBones, ik.Bones.Length, (i) =>
+             {
+                 EditorGUILayout.BeginHorizontal();
+                 EditorGUILayout.ObjectField(ik.Bones[i], typeof(Bone), true);
+                 ik.Weights[i] = EditorGUILayout.FloatField("Weight", ik.Weights[i]);
+                 EditorGUILayout.EndHorizontal();
+             });
             if (GUILayout.Button("Start"))
             {
                 iterator = IKCCD.InverseKinematicsIterate(ik.Bones, ik.transform.position, ik.Iteration);
@@ -28,6 +49,7 @@ namespace Assets.Editor
             {
                 iterator.MoveNext();
             }
+
             SceneView.RepaintAll();
         }
         float lastTime = 0;

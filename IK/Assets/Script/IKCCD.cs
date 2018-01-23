@@ -9,19 +9,30 @@ using UnityEngine;
 public class IKCCD: IK
 {
     public int Iteration = 100;
+    public float[] Weights = new float[0];
 
     [ExecuteInEditMode]
     private void Update()
     {
-        var rotations = InverseKinematics(Bones, transform.position, Iteration);
+        /*var r = Quaternion.Euler(45, 0, 0);
+        Quaternion.*/
+
+        var rotations = InverseKinematics(Bones, Weights, transform.position, Iteration);
         for (var i = 0; i < this.Bones.Length; i++)
         {
             Bones[i].transform.localRotation = rotations[i];
             //Bones[i].ApplyAngularLimit();
         }
-        
+        if(Bones.Length != Weights.Length)
+        {
+            var lengthOld = Weights.Length;
+            Array.Resize(ref Weights, Bones.Length);
+            for (var i = lengthOld; i < Bones.Length; i++)
+                Weights[i] = 1;
+        }
+
     }
-    public static Quaternion[] InverseKinematics(Bone[] bones,Vector3 target,int iteration)
+    public static Quaternion[] InverseKinematics(Bone[] bones,float[] weights,Vector3 target,int iteration)
     {
 
         // Make matrixs to transfrom P(i)->P(i+1)
@@ -69,7 +80,7 @@ public class IKCCD: IK
 
                 // Apply the rotation to the matrix
                 // Remove the current rotation of the matrix and apply the final rotation.
-                matrixs[i] = matrixs[i] * Matrix4x4.Inverse(Matrix4x4.Rotate(matrixs[i].rotation)) * Matrix4x4.Rotate(finalRotation);
+                matrixs[i] = matrixs[i] * Matrix4x4.Inverse(Matrix4x4.Rotate(matrixs[i].rotation)) * Matrix4x4.Rotate(Quaternion.Lerp(matrixs[i].rotation, finalRotation, weights[i]));
 
             }
         }
