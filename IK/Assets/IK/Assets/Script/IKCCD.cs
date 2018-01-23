@@ -16,19 +16,22 @@ public class IKCCD: IK
     {
         /*var r = Quaternion.Euler(45, 0, 0);
         Quaternion.*/
-
-        var rotations = InverseKinematics(Bones, Weights, transform.position, Iteration);
-        for (var i = 0; i < this.Bones.Length; i++)
-        {
-            Bones[i].transform.localRotation = rotations[i];
-            //Bones[i].ApplyAngularLimit();
-        }
-        if(Bones.Length != Weights.Length)
+        if (Bones.Length != Weights.Length)
         {
             var lengthOld = Weights.Length;
             Array.Resize(ref Weights, Bones.Length);
             for (var i = lengthOld; i < Bones.Length; i++)
                 Weights[i] = 1;
+        }
+
+        var rotations = InverseKinematics(Bones, Weights, transform.position, Iteration);
+        for (var i = 0; i < this.Bones.Length; i++)
+        {
+            if (i == 0)
+                Bones[i].transform.rotation = rotations[i];
+            else
+                Bones[i].transform.localRotation = rotations[i];
+            //Bones[i].ApplyAngularLimit();
         }
 
     }
@@ -151,6 +154,7 @@ public class IKCCD: IK
 
                 // Apply the rotation to the matrix
                 matrixs[i] *= Matrix4x4.Rotate(rotate);
+                bones[i].transform.localRotation *= rotate;
 
                 m = Matrix4x4.identity;
                 for (var j = 0; j <= i; j++)

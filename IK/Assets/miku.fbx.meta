@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 8eecc6f27b892924b9ac72e9d1ffb9fb
+timeCreated: 1516705771
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 23T
+    100002: Arm-L
+    100004: Arm-R
+    100006: ArmLower-L
+    100008: ArmLower-R
+    100010: body
+    100012: Bone-Base
+    100014: F1M
+    100016: F1M 1
+    100018: F1T
+    100020: F1T 1
+    100022: F2M
+    100024: F2M 1
+    100026: F2T
+    100028: F2T 1
+    100030: F3M
+    100032: F3M 1
+    100034: F3T
+    100036: F4M
+    100038: F4M 1
+    100040: F4T
+    100042: F4T 1
+    100044: F5M
+    100046: F5M 1
+    100048: F5T
+    100050: F5T 1
+    100052: Finger1-R
+    100054: Finger1L
+    100056: Finger2-R
+    100058: Finger2L
+    100060: Finger3-R
+    100062: Finger3L
+    100064: Finger4-R
+    100066: Finger4L
+    100068: Finger5-R
+    100070: Finger5L
+    100072: Foot-L
+    100074: Foot-R
+    100076: hair
+    100078: hair-slim
+    100080: Hand-L
+    100082: hand-L
+    100084: Hand-R
+    100086: hand-R
+    100088: Head
+    100090: head
+    100092: IK Chain001
+    100094: IK Chain002
+    100096: Leg-L
+    100098: Leg-Low
+    100100: Leg-Low 1
+    100102: Leg-R
+    100104: Miku
+    100106: //RootNode
+    100108: Neck-High
+    100110: Neck-Low
+    100112: shoes-L
+    100114: shoes-R
+    100116: Shoulder-L
+    100118: Shoulder-R
+    100120: skirt
+    100122: sleeve-L
+    100124: sleeve-R
+    100126: Spine-1
+    100128: Spine-2
+    100130: Spine-3
+    100132: Spine-4
+    100134: VRayLight001
+    400000: 23T
+    400002: Arm-L
+    400004: Arm-R
+    400006: ArmLower-L
+    400008: ArmLower-R
+    400010: body
+    400012: Bone-Base
+    400014: F1M
+    400016: F1M 1
+    400018: F1T
+    400020: F1T 1
+    400022: F2M
+    400024: F2M 1
+    400026: F2T
+    400028: F2T 1
+    400030: F3M
+    400032: F3M 1
+    400034: F3T
+    400036: F4M
+    400038: F4M 1
+    400040: F4T
+    400042: F4T 1
+    400044: F5M
+    400046: F5M 1
+    400048: F5T
+    400050: F5T 1
+    400052: Finger1-R
+    400054: Finger1L
+    400056: Finger2-R
+    400058: Finger2L
+    400060: Finger3-R
+    400062: Finger3L
+    400064: Finger4-R
+    400066: Finger4L
+    400068: Finger5-R
+    400070: Finger5L
+    400072: Foot-L
+    400074: Foot-R
+    400076: hair
+    400078: hair-slim
+    400080: Hand-L
+    400082: hand-L
+    400084: Hand-R
+    400086: hand-R
+    400088: Head
+    400090: head
+    400092: IK Chain001
+    400094: IK Chain002
+    400096: Leg-L
+    400098: Leg-Low
+    400100: Leg-Low 1
+    400102: Leg-R
+    400104: Miku
+    400106: //RootNode
+    400108: Neck-High
+    400110: Neck-Low
+    400112: shoes-L
+    400114: shoes-R
+    400116: Shoulder-L
+    400118: Shoulder-R
+    400120: skirt
+    400122: sleeve-L
+    400124: sleeve-R
+    400126: Spine-1
+    400128: Spine-2
+    400130: Spine-3
+    400132: Spine-4
+    400134: VRayLight001
+    4300000: hair-slim
+    4300002: hair
+    4300004: head
+    4300006: shoes-L
+    4300008: body
+    4300010: shoes-R
+    4300012: skirt
+    4300014: sleeve-L
+    4300016: sleeve-R
+    4300018: hand-L
+    4300020: hand-R
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body
+    13700002: hair
+    13700004: hair-slim
+    13700006: hand-L
+    13700008: hand-R
+    13700010: head
+    13700012: shoes-L
+    13700014: shoes-R
+    13700016: skirt
+    13700018: sleeve-L
+    13700020: sleeve-R
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: 5d3bb2d12fcf6a340912f3811f18ff52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: 8aac688fd7f4eed40a9da2bd2db33d2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #27'
+    second: {fileID: 2100000, guid: 29a811608c9162740acfedae28d012ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #28'
+    second: {fileID: 2100000, guid: 29a811608c9162740acfedae28d012ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #29'
+    second: {fileID: 2100000, guid: 29a811608c9162740acfedae28d012ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #30'
+    second: {fileID: 2100000, guid: 42658550d9011854da2d6b601b9fa2bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #31'
+    second: {fileID: 2100000, guid: 42658550d9011854da2d6b601b9fa2bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #33'
+    second: {fileID: 2100000, guid: 29a811608c9162740acfedae28d012ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #34'
+    second: {fileID: 2100000, guid: 5e474758b090b5447b0d44e18a5c2b18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #35'
+    second: {fileID: 2100000, guid: e138b2bf3b7a4a640848c81a0f7111a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #36'
+    second: {fileID: 2100000, guid: fccde0187fb13f44cadc5049f6c94bf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #37'
+    second: {fileID: 2100000, guid: 1453a28ef95bf5c4dbf83b61465a53dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #38'
+    second: {fileID: 2100000, guid: 5d3bb2d12fcf6a340912f3811f18ff52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39'
+    second: {fileID: 2100000, guid: e138b2bf3b7a4a640848c81a0f7111a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #40'
+    second: {fileID: 2100000, guid: 1453a28ef95bf5c4dbf83b61465a53dd, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

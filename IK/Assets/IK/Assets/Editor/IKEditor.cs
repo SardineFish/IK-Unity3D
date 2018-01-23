@@ -57,6 +57,7 @@ namespace Assets.Editor
 
         public void InitBones()
         {
+            ik = target as IK;
             if (ik.StartBone && ik.EndBone)
             {
                 ik.Bones = SearchBones(ik.EndBone.transform, ik.StartBone).ToArray();
