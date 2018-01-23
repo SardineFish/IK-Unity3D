@@ -9,6 +9,7 @@ public class Bone : MonoBehaviour
     public Vector3 InitialVector = new Vector3(1, 0, 0);
     public float Length = 1;
     public float Width = 0.1f;
+    public float MaxRotationSpeed = 180;
     public bool Edit = true;
     public Bone[] SubBones = new Bone[0];
     public bool _showAsActive = false;
@@ -17,6 +18,8 @@ public class Bone : MonoBehaviour
     public AngularRange AngularLimitX = new AngularRange(-180, 180);
     public AngularRange AngularLimitY = new AngularRange(-180, 180);
     public AngularRange AngularLimitZ = new AngularRange(-180, 180);
+
+    Quaternion lastRotation;
     
     public Vector3 DirectionVector
     {
@@ -37,7 +40,7 @@ public class Bone : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        lastRotation = transform.localRotation;
     }
 
     [ExecuteInEditMode]
@@ -54,6 +57,11 @@ public class Bone : MonoBehaviour
         }
     }
 
+    [ExecuteInEditMode]
+    private void FixedUpdate()
+    {
+    }
+
     public void AddSubBone(Bone bone)
     {
         Array.Resize(ref SubBones, SubBones.Length + 1);
@@ -62,6 +70,10 @@ public class Bone : MonoBehaviour
 
     public void ApplyAngularLimit()
     {
+        if (Quaternion.Angle(lastRotation, transform.localRotation) / Time.deltaTime > MaxRotationSpeed)
+        {
+            transform.localRotation = Quaternion.Lerp(lastRotation, transform.localRotation, MaxRotationSpeed / (Quaternion.Angle(lastRotation, transform.localRotation) / Time.deltaTime));
+        }
         if (AngularLimit)
         {
             var angle = transform.localRotation.eulerAngles;
@@ -75,6 +87,7 @@ public class Bone : MonoBehaviour
 
     public Quaternion ApplyAngularLimit(Quaternion rotation)
     {
+        lastRotation = transform.localRotation;
         if (AngularLimit)
         {
             var angle = rotation.eulerAngles;

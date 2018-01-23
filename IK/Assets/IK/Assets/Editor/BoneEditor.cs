@@ -73,6 +73,7 @@ namespace Assets.Editor
             if (bone.Length > 0)
                 bone.InitialVector *= bone.Length / bone.InitialVector.magnitude;
             bone.Width = EditorGUILayout.FloatField("Width", bone.Width);
+            bone.MaxRotationSpeed = Mathf.Abs(EditorGUILayout.FloatField("Max Rotation Speed",bone.MaxRotationSpeed));
             bone.AngularLimit = EditorGUILayout.Toggle("Angular Limit", bone.AngularLimit);
             bone.AngularLimitX = EditorUtility.DrawAngularRangeField("Angular Limit x", bone.AngularLimitX);
             bone.AngularLimitY = EditorUtility.DrawAngularRangeField("Angular Limit y", bone.AngularLimitY);

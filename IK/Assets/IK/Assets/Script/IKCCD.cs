@@ -31,6 +31,7 @@ public class IKCCD: IK
                 Bones[i].transform.rotation = rotations[i];
             else
                 Bones[i].transform.localRotation = rotations[i];
+            Bones[i].ApplyAngularLimit();
             //Bones[i].ApplyAngularLimit();
         }
 
