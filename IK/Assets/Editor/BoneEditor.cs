@@ -32,7 +32,7 @@ namespace Assets.Editor
             var colorGreen = Color.green;
             colorRed.a = colorBlue.a = colorGreen.a = 0.2f;
             var matrix = bone.transform.localToWorldMatrix * Matrix4x4.Rotate(Quaternion.Inverse(bone.transform.localRotation)) * Matrix4x4.Rotate( Quaternion.FromToRotation(Vector3.right, bone.InitialVector));
-            Handles.DrawLine(bone.transform.position, bone.transform.position + (matrix * Vector3.right).ToVector3());
+            //Handles.DrawLine(bone.transform.position, bone.transform.position + (matrix * Vector3.right).ToVector3());
 
             // Draw angular x
             Handles.color = colorRed;

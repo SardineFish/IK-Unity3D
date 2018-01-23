@@ -68,10 +68,22 @@ public class Bone : MonoBehaviour
             angle.x = AngularLimitX.Limit(MathUtility.MapAngle(angle.x));
             angle.y = AngularLimitY.Limit(MathUtility.MapAngle(angle.y));
             angle.z = AngularLimitZ.Limit(MathUtility.MapAngle(angle.z));
-            transform.localRotation = Quaternion.identity;
             transform.localRotation = Quaternion.Euler(angle);
 
         }
+    }
+
+    public Quaternion ApplyAngularLimit(Quaternion rotation)
+    {
+        if (AngularLimit)
+        {
+            var angle = rotation.eulerAngles;
+            angle.x = AngularLimitX.Limit(MathUtility.MapAngle(angle.x));
+            angle.y = AngularLimitY.Limit(MathUtility.MapAngle(angle.y));
+            angle.z = AngularLimitZ.Limit(MathUtility.MapAngle(angle.z));
+            return Quaternion.Euler(angle);
+        }
+        return rotation;
     }
 
     [ExecuteInEditMode]

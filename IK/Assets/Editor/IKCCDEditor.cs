@@ -12,10 +12,12 @@ namespace Assets.Editor
     [CustomEditor(typeof(IKCCD))]
     public class IKCCDEditor:IKEditor
     {
-        IEnumerator<ArrayList> iterator;
+        IEnumerator<object[]> iterator;
         public override void OnInspectorGUI()
         {
             var ik = target as IKCCD;
+            ik.Iteration = EditorGUILayout.IntField("Iteration", ik.Iteration);
+            EditorGUILayout.Space();
             base.OnInspectorGUI();
             if (GUILayout.Button("Start"))
             {
@@ -26,6 +28,7 @@ namespace Assets.Editor
             {
                 iterator.MoveNext();
             }
+            SceneView.RepaintAll();
         }
         float lastTime = 0;
         float dt = 0.1f;
@@ -33,17 +36,26 @@ namespace Assets.Editor
 
         private void OnSceneGUI()
         {
+            var ik = target as IKCCD;
+            if(ik.Bones!=null && ik.Bones.Length > 0)
+            {
+                Color colorPink;
+                ColorUtility.TryParseHtmlString("#F48FB1", out colorPink);
+                Debug.DrawLine(ik.Bones[ik.Bones.Length-1].transform.position + ik.Bones[ik.Bones.Length - 1].DirectionVector, ik.transform.position, colorPink);
+            }
             if (iterator==null || iterator.Current == null)
                 return;
             var origin = (Vector3)iterator.Current[0];
-            var rotate = (Quaternion)iterator.Current[3];
+            Debug.DrawLine(origin, origin + (Vector3)iterator.Current[1]);
+            Debug.DrawLine(origin, origin + (Vector3)iterator.Current[2]);
+            /*var rotate = (Quaternion)iterator.Current[3];
             Debug.DrawLine(origin, (Vector3)iterator.Current[1]);
             Debug.DrawLine(origin, (Vector3)iterator.Current[2]);
             var dir1 = (Vector3)iterator.Current[1] - (Vector3)iterator.Current[0];
             var dir2 = (Vector3)iterator.Current[2] - (Vector3)iterator.Current[0];
             //var rotate = Quaternion.FromToRotation(dir1, dir2);//IKUtility.QuaternionBetweenVector(dir1, dir2);
             dir1 = rotate * dir1;
-            Debug.DrawLine((Vector3)iterator.Current[0], (Vector3)iterator.Current[0] + dir1 * 2,Color.red);
+            Debug.DrawLine((Vector3)iterator.Current[0], (Vector3)iterator.Current[0] + dir1 * 2,Color.red);*/
             /*var ik = target as IKCCD;
             if (Time.time - lastTime > dt)
             {
