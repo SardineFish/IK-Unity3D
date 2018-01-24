@@ -253,9 +253,11 @@ MonoBehaviour:
   InitialVector: {x: -0.07, y: 0, z: 0}
   Length: 0.07
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -473,13 +475,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.06748209, y: -0.00000005565934, z: -0.000000007468953}
-  Length: 0.06748209
+  InitialVector: {x: -0.06748227, y: -0.00000006129474, z: 0.00000015044907}
+  Length: 0.06748227
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 84136974}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -615,9 +619,11 @@ MonoBehaviour:
   InitialVector: {x: -0.04, y: 0, z: 0}
   Length: 0.04
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -674,9 +680,11 @@ MonoBehaviour:
   InitialVector: {x: -0.06, y: 0, z: 0}
   Length: 0.06
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -734,10 +742,12 @@ MonoBehaviour:
   InitialVector: {x: -0.22487324, y: 0.0000000021637072, z: 0.0000000995265}
   Length: 0.22487324
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 557398525}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -880,13 +890,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.28528473, y: 0.0000002425977, z: -0.000000032957235}
-  Length: 0.28528473
+  InitialVector: {x: -0.2852848, y: -0.00000023297943, z: -0.000000029787426}
+  Length: 0.2852848
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1770146355}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -941,13 +953,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.07813149, y: 0.0000008822284, z: -0.00000013578446}
-  Length: 0.07813149
+  InitialVector: {x: -0.07813121, y: 0.0000010644479, z: -0.00000014184}
+  Length: 0.07813121
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 554696069}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -990,9 +1004,11 @@ MonoBehaviour:
   InitialVector: {x: -0.09599952, y: 0.08099989, z: 0.5200003}
   Length: 0.5349553
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1061,13 +1077,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.08455203, y: -0.000000050033538, z: 0.000000071599416}
-  Length: 0.08455203
+  InitialVector: {x: -0.08455202, y: -0.000000055443305, z: 0.00000039811331}
+  Length: 0.08455202
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 421061038}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1284,9 +1302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.03362755, y: 0.0350887, z: 0.07095688}
-  Length: 0.08600528
+  InitialVector: {x: -0.033627644, y: 0.035088614, z: 0.07095686}
+  Length: 0.08600526
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 241499207}
@@ -1295,6 +1314,7 @@ MonoBehaviour:
   - {fileID: 1386392179}
   - {fileID: 1188389959}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1368,13 +1388,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.06376291, y: 0.0000000033769822, z: 0.00000010261036}
-  Length: 0.06376291
+  InitialVector: {x: -0.063763, y: 0.000000010260301, z: 0.00000017996166}
+  Length: 0.063763
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1115454629}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1524,13 +1546,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.07200133, y: -0.000000022082338, z: 0.0000003083378}
-  Length: 0.07200133
+  InitialVector: {x: -0.07200176, y: 0.00000011426931, z: 0.000000111024804}
+  Length: 0.07200176
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 6932302}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1588,10 +1612,10 @@ Animator:
   m_GameObject: {fileID: 473042460}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8eecc6f27b892924b9ac72e9d1ffb9fb, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e221808f3da4404cb8c62114fcbf570, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1628,9 +1652,11 @@ MonoBehaviour:
   InitialVector: {x: -0.039000507, y: 0.002999643, z: 0.2659998}
   Length: 0.26886043
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1699,13 +1725,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.073617, y: 0.000000072485385, z: 0.000000043975586}
+  InitialVector: {x: -0.073617, y: 0.00000007319861, z: 0.00000005048952}
   Length: 0.073617
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1257227902}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1760,13 +1788,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.28192362, y: -0.00000009608448, z: 0.0000000069759376}
+  InitialVector: {x: -0.28192362, y: -0.00000011098243, z: 0.000000006971003}
   Length: 0.28192362
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 2063731163}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1886,13 +1916,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.069317706, y: -0.0000022658978, z: 0.00000019497266}
-  Length: 0.069317706
+  InitialVector: {x: -0.069317624, y: -0.000002264848, z: 0.000000114710474}
+  Length: 0.069317624
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 144826798}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -1947,13 +1979,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.06552461, y: -0.00000030750505, z: -0.0000003036579}
-  Length: 0.06552461
+  InitialVector: {x: -0.065524615, y: -0.00000030605938, z: -0.0000002966367}
+  Length: 0.065524615
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1949862095}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2011,10 +2045,12 @@ MonoBehaviour:
   InitialVector: {x: -0.26996985, y: -0.00000075014736, z: 0.00000004608945}
   Length: 0.26996985
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 147134283}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2071,9 +2107,11 @@ MonoBehaviour:
   InitialVector: {x: -0.059999995, y: 0, z: 0}
   Length: 0.059999995
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2113,13 +2151,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.22188981, y: -0.0000001821741, z: 0.000000088955}
-  Length: 0.22188981
+  InitialVector: {x: -0.22188982, y: -0.0000002052455, z: 0.00000008901665}
+  Length: 0.22188982
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1087770445}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2174,13 +2214,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.067449525, y: -0.000001732131, z: 0.00000008620272}
-  Length: 0.067449525
+  InitialVector: {x: -0.06744962, y: -0.0000017236802, z: 0.00000015869213}
+  Length: 0.06744962
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1644501758}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2235,13 +2277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.6785522, y: -0.00000008635493, z: 0.00000010592947}
-  Length: 0.6785522
+  InitialVector: {x: -0.6785519, y: 0.00000023621512, z: 0.0000001082771}
+  Length: 0.6785519
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1707124515}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2299,9 +2343,11 @@ MonoBehaviour:
   InitialVector: {x: -0.05, y: 0, z: 0}
   Length: 0.05
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2396,13 +2442,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.65451765, y: 0.0000005092972, z: 0.00000005918078}
+  InitialVector: {x: -0.65451765, y: 0.0000004473196, z: 0.0000000579845}
   Length: 0.65451765
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 409496315}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2472,13 +2520,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.09526915, y: 0.00000013828688, z: 0.0000002614658}
-  Length: 0.09526915
+  InitialVector: {x: -0.095269136, y: 0.00000012781062, z: 0.00000026173228}
+  Length: 0.095269136
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 695679486}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2512,7 +2562,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 948348381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.414, y: -0.01, z: 0.096}
+  m_LocalPosition: {x: 0.42, y: 0, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1700973518}
@@ -2534,10 +2584,11 @@ MonoBehaviour:
   Bones:
   - {fileID: 1678623856}
   - {fileID: 1822205183}
-  Iteration: 100
+  Iteration: 20
   Weights:
   - 1
   - 1
+  StartOffset: {x: 0, y: 0.043619387, z: 0, w: 0.99904823}
 --- !u!1 &970697012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,9 +2618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.043502863, y: -0.05221329, z: 0.07043068}
-  Length: 0.09787343
+  InitialVector: {x: -0.04350281, y: -0.05221303, z: 0.07043067}
+  Length: 0.09787326
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1592805109}
@@ -2578,6 +2630,7 @@ MonoBehaviour:
   - {fileID: 286025188}
   - {fileID: 739828311}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2733,13 +2786,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.059230223, y: -0.00000009964876, z: 0.00000022289487}
-  Length: 0.059230223
+  InitialVector: {x: -0.05923022, y: -0.00000012684352, z: 0.00000018633585}
+  Length: 0.05923022
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1887658269}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2779,13 +2834,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.11394213, y: 0.000000038183263, z: 0.000000017426478}
-  Length: 0.11394213
+  InitialVector: {x: -0.11394287, y: -0.00000005112471, z: 0.0000000065584755}
+  Length: 0.11394287
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 542070225}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2803,8 +2860,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1087770444}
-  m_LocalRotation: {x: 0.0000000027599754, y: 0.0005596827, z: 0.0023264624, w: 0.99999714}
-  m_LocalPosition: {x: -0.22188957, y: 0, z: 0.00000006055832}
+  m_LocalRotation: {x: -5.8208016e-10, y: -1.1641177e-10, z: 0.0000016987324, w: 1}
+  m_LocalPosition: {x: -0.2218895, y: 0, z: 0.00000006055831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 542070226}
@@ -2857,9 +2914,11 @@ MonoBehaviour:
   InitialVector: {x: -0.06, y: 0, z: 0}
   Length: 0.06
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -2899,13 +2958,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.30069977, y: 0.00000032385395, z: 0.00000007400113}
-  Length: 0.30069977
+  InitialVector: {x: -0.3006998, y: 0.0000003219695, z: 0.00000007389431}
+  Length: 0.3006998
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 794332054}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3046,10 +3107,12 @@ MonoBehaviour:
   InitialVector: {x: -0.06514029, y: 0.0000017410848, z: 0.000000064594964}
   Length: 0.06514029
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1916637276}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3151,9 +3214,11 @@ MonoBehaviour:
   InitialVector: {x: -0.07, y: 0, z: 0}
   Length: 0.07
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3188,7 +3253,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357219850}
-  m_LocalRotation: {x: 0.6945652, y: -0.050038666, z: 0.004795134, w: 0.71767145}
+  m_LocalRotation: {x: 0.69456506, y: -0.050038755, z: 0.004794657, w: 0.71767163}
   m_LocalPosition: {x: -0.19668446, y: 0.005829586, z: 0.05527346}
   m_LocalScale: {x: 0.99999976, y: 0.99999994, z: 0.9999999}
   m_Children:
@@ -3208,13 +3273,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.08224855, y: 0.00000045285657, z: -0.0000003417478}
-  Length: 0.08224855
+  InitialVector: {x: -0.082248345, y: 0.0000004024706, z: -0.00000011277956}
+  Length: 0.082248345
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1078849832}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3254,13 +3321,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -1.4254328, y: 0.00000012037502, z: 0.000000057914367}
-  Length: 1.4254328
+  InitialVector: {x: -1.425432, y: 0.00000013992087, z: 0.000000021613127}
+  Length: 1.425432
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 2120576321}
   _showAsActive: 0
+  InitialRotation: {x: -0.1125661, y: -0.026934631, z: -0.026166366, w: 0.9929344}
   AngularLimit: 1
   AngularLimitX:
     low: -20.1
@@ -3278,7 +3347,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1367645095}
-  m_LocalRotation: {x: -0.11256625, y: -0.026934851, z: -0.0261665, w: 0.99293435}
+  m_LocalRotation: {x: -0.11256609, y: -0.026934644, z: -0.026166473, w: 0.9929344}
   m_LocalPosition: {x: -1.3318791, y: 0.00000043904782, z: -0.00000018167496}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children:
@@ -3330,13 +3399,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.08417311, y: 0.00000083719704, z: 0.000000083455824}
-  Length: 0.08417311
+  InitialVector: {x: -0.08417338, y: 0.0000008415906, z: 0.000000031258196}
+  Length: 0.08417338
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1929217082}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3372,7 +3443,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525736869}
   m_LocalRotation: {x: 0.000000015667403, y: -0.000000015238237, z: -0.69722044, w: 0.71685684}
-  m_LocalPosition: {x: 0.15805683, y: 3.0112896, z: -0.9720387}
+  m_LocalPosition: {x: 0.1580568, y: 3.01129, z: -0.9720387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 698125568}
@@ -3396,12 +3467,14 @@ MonoBehaviour:
   InitialVector: {x: -0.124726556, y: -0.0021496147, z: 9.3962414e-11}
   Length: 0.12474508
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 698125569}
   - {fileID: 1537219083}
   - {fileID: 1678623856}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3437,14 +3510,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537219081}
-  m_LocalRotation: {x: -0.017736576, y: -0.012835233, z: 0.9997465, w: -0.0052615404}
+  m_LocalRotation: {x: 0.015449339, y: -0.11017288, z: -0.993764, w: 0.007513289}
   m_LocalPosition: {x: -0.040977877, y: -0.2533919, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children:
   - {fileID: 1367645097}
   m_Father: {fileID: 1525736870}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -365.414, y: -721.33, z: 537.836}
+  m_LocalEulerAnglesHint: {x: -533.85, y: -1020.138, z: 685.996}
 --- !u!114 &1537219083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3457,17 +3530,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -1.3318799, y: 0.00000066389094, z: -0.00000023471468}
-  Length: 1.3318799
+  InitialVector: {x: -1.3318797, y: 0.0000006699845, z: -0.00000022625518}
+  Length: 1.3318797
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1367645096}
   _showAsActive: 0
+  InitialRotation: {x: -0.1769005, y: -0.7224882, z: 0.66356516, w: -0.07998923}
   AngularLimit: 1
   AngularLimitX:
-    low: -68.12
-    high: 80.8
+    low: -17.9
+    high: 5.4
   AngularLimitY:
     low: -131.8
     high: 37.5
@@ -3481,7 +3556,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537219081}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.2262276
   m_Height: 1.6755856
@@ -3519,9 +3594,11 @@ MonoBehaviour:
   InitialVector: {x: -0.06, y: 0, z: 0}
   Length: 0.06
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3590,13 +3667,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.091402635, y: 0.0000003089984, z: -0.000000044050054}
-  Length: 0.091402635
+  InitialVector: {x: -0.091402516, y: 0.00000020871664, z: 0.0000001299913}
+  Length: 0.091402516
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 466735355}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3636,13 +3715,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.056582164, y: 0.00000029342323, z: -0.000000029607104}
-  Length: 0.056582164
+  InitialVector: {x: -0.056581922, y: 0.00000026869387, z: 0.00000007485781}
+  Length: 0.056581922
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 795269726}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3712,13 +3793,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.09695558, y: 0.000000026540695, z: 0.000000058291707}
-  Length: 0.09695558
+  InitialVector: {x: -0.09695546, y: 0.000000021138096, z: -0.00000035879788}
+  Length: 0.09695546
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 44628355}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3754,14 +3837,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678623854}
-  m_LocalRotation: {x: -0.014807006, y: 0.10321104, z: 0.99227786, w: 0.06717853}
+  m_LocalRotation: {x: -0.021248972, y: 0.15295145, z: 0.9857699, w: 0.06642314}
   m_LocalPosition: {x: -0.0018838482, y: 0.23761399, z: -0.00000024223328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1822205182}
   m_Father: {fileID: 1525736870}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -528.063, y: -540.909, z: 1432.346}
+  m_LocalEulerAnglesHint: {x: -15.203001, y: -12.389001, z: 4133.486}
 --- !u!114 &1678623856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3774,17 +3857,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -1.2853976, y: 0.000004986303, z: -0.000000009927176}
-  Length: 1.2853976
+  InitialVector: {x: -1.2853974, y: 0.0000048244683, z: -0.000000031021674}
+  Length: 1.2853974
   Width: 0.1
+  MaxRotationSpeed: 1000
   Edit: 1
   SubBones:
   - {fileID: 1822205183}
   _showAsActive: 0
+  InitialRotation: {x: 0.0058569144, y: -0.96246, z: 0.26944378, w: 0.032196943}
   AngularLimit: 1
   AngularLimitX:
-    low: -84.3
-    high: 37.7
+    low: -18
+    high: 12.9
   AngularLimitY:
     low: -180
     high: 180
@@ -3798,7 +3883,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678623854}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.21248561
   m_Height: 1.7431055
@@ -3863,13 +3948,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.64077294, y: 0.0000024755777, z: 0.0000089761625}
-  Length: 0.64077294
+  InitialVector: {x: -0.64077306, y: 0.0000018828332, z: 0.000008972358}
+  Length: 0.64077306
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 970697013}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -3940,13 +4027,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.68487465, y: 0.0000005903211, z: -0.000000020739861}
-  Length: 0.68487465
+  InitialVector: {x: -0.6848748, y: 0.0000009434795, z: -0.000000023967583}
+  Length: 0.6848748
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 826751847}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -5531,7 +5620,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1822205181}
-  m_LocalRotation: {x: -0.03460093, y: -0.009952942, z: 0.052598435, w: 0.9979665}
+  m_LocalRotation: {x: -0.018479079, y: -0.022356246, z: 0.05260915, w: 0.99819386}
   m_LocalPosition: {x: -1.285397, y: 0.00000469327, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5551,13 +5640,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -1.4431913, y: 0.0000023064351, z: 0.000000043233968}
-  Length: 1.4431913
+  InitialVector: {x: -1.4431909, y: 0.0000020355137, z: 0.000000029244825}
+  Length: 1.4431909
   Width: 0.1
+  MaxRotationSpeed: 1000
   Edit: 1
   SubBones:
   - {fileID: 266550782}
   _showAsActive: 0
+  InitialRotation: {x: -0.03446733, y: -0.013236435, z: 0.052490026, w: 0.9979387}
   AngularLimit: 1
   AngularLimitX:
     low: -3.9
@@ -5600,10 +5691,11 @@ MonoBehaviour:
   Bones:
   - {fileID: 1537219083}
   - {fileID: 1367645096}
-  Iteration: 200
+  Iteration: 30
   Weights:
   - 1
   - 1
+  StartOffset: {x: 0, y: 0, z: 0, w: 1}
 --- !u!4 &1827941351
 Transform:
   m_ObjectHideFlags: 0
@@ -5611,7 +5703,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1827941349}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.118, y: 0, z: 0.038}
+  m_LocalPosition: {x: 0.166, y: 0.011, z: -0.116}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1700973518}
@@ -5772,9 +5864,11 @@ MonoBehaviour:
   InitialVector: {x: -0.059999995, y: 0, z: 0}
   Length: 0.059999995
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -5814,13 +5908,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.047768943, y: 0.0000008570693, z: 0.000000285942}
-  Length: 0.047768943
+  InitialVector: {x: -0.047768977, y: 0.0000009749575, z: 0.00000029446602}
+  Length: 0.047768977
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 1562342525}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -5890,13 +5986,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.059758227, y: 0.000000030945937, z: 0.00000023612169}
-  Length: 0.059758227
+  InitialVector: {x: -0.05975796, y: 0.000000032230183, z: 0.00000032765897}
+  Length: 0.05975796
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 708769181}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -5953,9 +6051,11 @@ MonoBehaviour:
   InitialVector: {x: -0.07, y: 0, z: 0}
   Length: 0.07
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -6010,13 +6110,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.095921524, y: 0.000000022584963, z: 0.00000012573206}
-  Length: 0.095921524
+  InitialVector: {x: -0.09592161, y: 0.000000023122249, z: 0.0000001908082}
+  Length: 0.09592161
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 689511809}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -6051,8 +6153,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063731161}
-  m_LocalRotation: {x: 2.4976016e-10, y: 9.983286e-13, z: 0.00406574, w: 0.9999918}
-  m_LocalPosition: {x: -0.28192344, y: -0.00000006055832, z: 0}
+  m_LocalRotation: {x: 2.6527766e-10, y: 1.0442136e-10, z: 0.0040656924, w: 0.9999918}
+  m_LocalPosition: {x: -0.28192353, y: -0.000000059604577, z: 2.8421703e-14}
   m_LocalScale: {x: 0.9999996, y: 0.9999996, z: 1}
   m_Children:
   - {fileID: 725168354}
@@ -6073,15 +6175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cd6c057c7d2764085279cac6a54531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialVector: {x: -0.20398748, y: 0.000000003422866, z: 0.000000011881186}
-  Length: 0.20398748
+  InitialVector: {x: -0.203987, y: 0.0000000194322, z: 0.000000008874917}
+  Length: 0.203987
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones:
   - {fileID: 725168353}
   - {fileID: 1153029755}
   - {fileID: 199153052}
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180
@@ -6154,9 +6258,11 @@ MonoBehaviour:
   InitialVector: {x: -0.13500033, y: -0.034999758, z: 0.47300005}
   Length: 0.49313194
   Width: 0.1
+  MaxRotationSpeed: 180
   Edit: 1
   SubBones: []
   _showAsActive: 0
+  InitialRotation: {x: 0, y: 0, z: 0, w: 0}
   AngularLimit: 1
   AngularLimitX:
     low: -180

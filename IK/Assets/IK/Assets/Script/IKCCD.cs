@@ -10,6 +10,7 @@ public class IKCCD: IK
 {
     public int Iteration = 100;
     public float[] Weights = new float[0];
+    public Quaternion StartOffset = Quaternion.identity;
 
     [ExecuteInEditMode]
     private void Update()
@@ -24,7 +25,7 @@ public class IKCCD: IK
                 Weights[i] = 1;
         }
 
-        var rotations = InverseKinematics(Bones, Weights, transform.position, Iteration);
+        var rotations = InverseKinematics(Bones, Weights, transform.position, Iteration,StartOffset);
         for (var i = 0; i < this.Bones.Length; i++)
         {
             if (i == 0)
@@ -36,7 +37,7 @@ public class IKCCD: IK
         }
 
     }
-    public static Quaternion[] InverseKinematics(Bone[] bones,float[] weights,Vector3 target,int iteration)
+    public static Quaternion[] InverseKinematics(Bone[] bones,float[] weights,Vector3 target,int iteration,Quaternion startOffset)
     {
 
         // Make matrixs to transfrom P(i)->P(i+1)
@@ -49,7 +50,14 @@ public class IKCCD: IK
             }
             else
                 matrixs[i] = Matrix4x4.Inverse( bones[i - 1].transform.localToWorldMatrix) * bones[i].transform.localToWorldMatrix;
+            //matrixs[i] = matrixs[i] * Matrix4x4.Rotate(startOffset);
         }
+        if (1- Vector3.Dot(bones[bones.Length - 1].transform.worldToLocalMatrix.MultiplyPoint(target).normalized, bones[bones.Length - 1].InitialVector.normalized) < 0.01)
+        {
+            //startOffset = Quaternion.identity;
+            matrixs[0] = matrixs[0] * Matrix4x4.Rotate(startOffset);
+        }
+
 
         for (int iterate = 0; iterate < iteration; iterate++)
         {
@@ -77,15 +85,16 @@ public class IKCCD: IK
                 var localTarget = Matrix4x4.Inverse(m).MultiplyPoint(target);
 
                 // Calculate the delta rotation
-                var rotate = Quaternion.FromToRotation(localEndpoint, localTarget);
+                var rotate = /*(Quaternion.Lerp(matrixs[i].rotation, bones[i].InitialRotation, 0.001f) *Quaternion.Inverse(matrixs[i].rotation)) **/ Quaternion.FromToRotation(localEndpoint, localTarget);
 
                 // Apply the angular limit to total rotation and get the final delta rotation
-                var finalRotation = bones[i].ApplyAngularLimit(matrixs[i].rotation * rotate);
+                var finalRotation = bones[i].ApplyAngularLimit(matrixs[i].rotation * rotate, i == 0 ? Space.World: Space.Self);
 
                 // Apply the rotation to the matrix
                 // Remove the current rotation of the matrix and apply the final rotation.
                 matrixs[i] = matrixs[i] * Matrix4x4.Inverse(Matrix4x4.Rotate(matrixs[i].rotation)) * Matrix4x4.Rotate(Quaternion.Lerp(matrixs[i].rotation, finalRotation, weights[i]));
-
+                //matrixs[i] = matrixs[i] * Matrix4x4.Rotate(rotate);
+                //bones[i].transform.localRotation *= rotate;
             }
         }
         var rotations = new Quaternion[bones.Length];
@@ -148,14 +157,16 @@ public class IKCCD: IK
                 };
 
                 // Calculate the delta rotation
-                var rotate = Quaternion.FromToRotation(localEndpoint, localTarget);
+
+                var rotate = /*(Quaternion.Lerp(matrixs[i].rotation, bones[i].InitialRotation, 0.001f) *Quaternion.Inverse(matrixs[i].rotation)) **/ Quaternion.FromToRotation(localEndpoint, localTarget);
 
                 // Apply the angular limit to total rotation and get the final delta rotation
-                //rotate = bones[i].ApplyAngularLimit(matrixs[i].rotation * rotate) * Quaternion.Inverse(matrixs[i].rotation);
+                var finalRotation = bones[i].ApplyAngularLimit(matrixs[i].rotation * rotate, i == 0 ? Space.World : Space.Self);
 
                 // Apply the rotation to the matrix
-                matrixs[i] *= Matrix4x4.Rotate(rotate);
-                bones[i].transform.localRotation *= rotate;
+                // Remove the current rotation of the matrix and apply the final rotation.
+                matrixs[i] = matrixs[i] * Matrix4x4.Inverse(Matrix4x4.Rotate(matrixs[i].rotation)) * Matrix4x4.Rotate(finalRotation);
+                //bones[i].transform.localRotation *= rotate;
 
                 m = Matrix4x4.identity;
                 for (var j = 0; j <= i; j++)
@@ -178,6 +189,11 @@ public class IKCCD: IK
             yield return rotations;*/
         }
         for (var i = 0; i < bones.Length; i++)
-            bones[i].transform.localRotation = matrixs[i].rotation;
+        {
+            if (i == 0)
+                bones[i].transform.rotation = matrixs[i].rotation;
+            else
+                bones[i].transform.localRotation = matrixs[i].rotation;
+        }
     }
 }

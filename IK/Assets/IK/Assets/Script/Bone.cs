@@ -13,6 +13,7 @@ public class Bone : MonoBehaviour
     public bool Edit = true;
     public Bone[] SubBones = new Bone[0];
     public bool _showAsActive = false;
+    public Quaternion InitialRotation;
 
     public bool AngularLimit = true;
     public AngularRange AngularLimitX = new AngularRange(-180, 180);
@@ -73,6 +74,7 @@ public class Bone : MonoBehaviour
         if (Quaternion.Angle(lastRotation, transform.localRotation) / Time.deltaTime > MaxRotationSpeed)
         {
             transform.localRotation = Quaternion.Lerp(lastRotation, transform.localRotation, MaxRotationSpeed / (Quaternion.Angle(lastRotation, transform.localRotation) / Time.deltaTime));
+            lastRotation = transform.localRotation;
         }
         if (AngularLimit)
         {
@@ -85,16 +87,29 @@ public class Bone : MonoBehaviour
         }
     }
 
-    public Quaternion ApplyAngularLimit(Quaternion rotation)
+    public Quaternion ApplyAngularLimit(Quaternion rotation, Space space)
     {
-        lastRotation = transform.localRotation;
         if (AngularLimit)
         {
+            if (space == Space.World)
+            {
+                if (transform.parent)
+                {
+                    rotation = Quaternion.Inverse(transform.parent.rotation) * rotation;
+                }
+            }
             var angle = rotation.eulerAngles;
             angle.x = AngularLimitX.Limit(MathUtility.MapAngle(angle.x));
             angle.y = AngularLimitY.Limit(MathUtility.MapAngle(angle.y));
             angle.z = AngularLimitZ.Limit(MathUtility.MapAngle(angle.z));
-            return Quaternion.Euler(angle);
+            rotation = Quaternion.Euler(angle);
+            if (space == Space.World)
+            {
+                if (transform.parent)
+                {
+                    rotation = transform.parent.rotation * rotation;
+                }
+            }
         }
         return rotation;
     }

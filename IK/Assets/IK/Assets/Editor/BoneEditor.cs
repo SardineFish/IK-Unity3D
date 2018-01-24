@@ -81,6 +81,10 @@ namespace Assets.Editor
             EditorGUILayout.Space();
             bone . InitialVector = EditorGUILayout.Vector3Field("Initial Vector", bone.InitialVector);
             EditorGUILayout.Space();
+            if(GUILayout.Button("Set Initial Rotation"))
+            {
+                bone.InitialRotation = bone.transform.localRotation;
+            }
             if(GUILayout.Button("Init Children Bones"))
             {
                 InitSubBones(bone);

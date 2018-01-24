@@ -18,6 +18,7 @@ namespace Assets.Editor
         {
             var ik = target as IKCCD;
             ik.Iteration = EditorGUILayout.IntField("Iteration", ik.Iteration);
+            ik.StartOffset = Quaternion.Euler(EditorGUILayout.Vector3Field("Start Offset", ik.StartOffset.eulerAngles));
             EditorGUILayout.Space();
             
             var bone = EditorGUILayout.ObjectField("Start Bone", ik.StartBone, typeof(Bone), true) as Bone;
